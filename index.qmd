@@ -10,9 +10,10 @@ title: ""
 ::: {.column width="65%"}
 ![](images/UniversityofPennsylvania_FullLogo_RGB.png){width="250px"}
 
-# Student Name
+# Changlin (Bruce) Du 杜昶霖
 
 University of Pennsylvaina
+Department of Economics
 
 Welcome to my personal website.
 
