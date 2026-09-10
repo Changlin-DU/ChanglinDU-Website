@@ -18,7 +18,7 @@
     "href": "bio.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\nMaster of Applied Economics and Data Science, University of Pennsylvania (expaceted 2027) Batelor of Science, University Name 2026"
+    "text": "Education\nM.S. Applied Economics and Data Science, University of Pennsylvania, 2027 B.A. Economics (High Honors), Wake Forest University, 2026"
   },
   {
     "objectID": "bio.html#interests",
@@ -75,5 +75,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "bio.html#changlinsas.upenn.edu",
+    "href": "bio.html#changlinsas.upenn.edu",
+    "title": "About Me",
+    "section": "changlin@sas.upenn.edu",
+    "text": "changlin@sas.upenn.edu"
   }
 ]

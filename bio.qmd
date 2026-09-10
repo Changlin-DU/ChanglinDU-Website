@@ -13,7 +13,8 @@ Include:
 
 ## Education
 
-Master of Applied Economics and Data Science, University of Pennsylvania (expaceted 2027) Batelor of Science, University Name 2026
+M.S. Applied Economics and Data Science, University of Pennsylvania, 2027
+B.A. Economics (High Honors), Wake Forest University, 2026
 
 ## Interests
 
@@ -23,6 +24,6 @@ Master of Applied Economics and Data Science, University of Pennsylvania (expace
 
 ## Contact
 
-## student\@email.edu
+## changlin@sas.upenn.edu
 
 ------------------------------------------------------------------------
