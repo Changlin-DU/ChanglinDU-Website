@@ -13,8 +13,10 @@ Include:
 
 ## Education
 
-M.S. Applied Economics and Data Science, University of Pennsylvania, 2027
-B.A. Economics (High Honors), Wake Forest University, 2026
+M.S. Applied Economics and Data Science, University of Pennsylvania, 2027<br>
+B.A. Economics (High Honors), Wake Forest University, 2026<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Honors Thesis: *“Do H-1B Workers Substitute For or Complement U.S. Domestic Workers?”*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Advisor: *Andre Mouton*
 
 ## Interests
 
