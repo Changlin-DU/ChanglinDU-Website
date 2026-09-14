@@ -46,7 +46,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+    "text": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/post1/Untitled.html",
@@ -184,63 +184,63 @@
   {
     "objectID": "blog/posts/post1/index.html",
     "href": "blog/posts/post1/index.html",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "",
     "text": "Hello everyone, welcome to my first blog post!\nToday, I want to discuss the Slutsky decomposition, because I think it is one of those ideas that looks much harder when we first see the equations than it really is.\nSuppose the price of coffee goes up. The first reaction is simple: coffee is more expensive, so I buy less of it. But that answer combines two different forces. First, coffee is now more expensive relative to other goods, so I have a reason to substitute away from it. Second, even if my income does not change, the same income buys less than before, so my real purchasing power falls.\nThe difficult part is that these two effects happen at the same time. We only observe the move from the original choice to the final choice. We do not directly see how much came from substitution and how much came from lower purchasing power. Economists therefore introduce a hypothetical compensation step. We imagine giving the consumer just enough income to stay at the original utility level after the price change. This is not meant to describe what literally happens; it is a thought experiment that isolates the response to the new relative prices. Once that compensation is removed, the remaining change is the income effect.\nThe basic idea is\n\\[\n\\text{Total Effect}\n=\n\\text{Substitution Effect}\n+\n\\text{Income Effect}.\n\\]\nThe example below makes this separation concrete and then connects it to the general Slutsky equation."
   },
   {
     "objectID": "blog/posts/post1/index.html#a-numerical-example",
     "href": "blog/posts/post1/index.html#a-numerical-example",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "A Numerical Example",
     "text": "A Numerical Example\nSuppose a consumer chooses between coffee, \\(x\\), and all other goods, \\(y\\), with preferences\n\\[\nU(x,y)=xy^2.\n\\]\nThe consumer has income \\(m\\) and faces prices \\(p_x\\) and \\(p_y\\). The budget constraint is\n\\[\np_xx+p_yy=m.\n\\]\nThe consumer solves\n\\[\n\\max_{x,y} xy^2\n\\]\nsubject to\n\\[\np_xx+p_yy=m.\n\\]\nThe Lagrangian is\n\\[\n\\mathcal{L}\n=\nxy^2+\\lambda(m-p_xx-p_yy).\n\\]\nThe first-order conditions are\n\\[\n\\frac{\\partial\\mathcal{L}}{\\partial x}\n=\ny^2-\\lambda p_x\n=\n0\n\\]\nand\n\\[\n\\frac{\\partial\\mathcal{L}}{\\partial y}\n=\n2xy-\\lambda p_y\n=\n0.\n\\]\nDividing the two conditions gives\n\\[\n\\frac{y}{2x}\n=\n\\frac{p_x}{p_y},\n\\]\nso\n\\[\ny\n=\n\\frac{2p_x}{p_y}x.\n\\]\nSubstituting into the budget constraint gives\n\\[\n3p_xx=m.\n\\]\nTherefore, the Marshallian demands are\n\\[\nx(p_x,m)\n=\n\\frac{m}{3p_x}\n\\]\nand\n\\[\ny(p_y,m)\n=\n\\frac{2m}{3p_y}.\n\\]\nTo keep the arithmetic clean, I use normalized prices rather than literal café prices. Suppose\n\\[\nm=120,\n\\qquad\np_x=1,\n\\qquad\np_y=1.\n\\]\nThe original bundle is\n\\[\nx_0=40\n\\]\nand\n\\[\ny_0=80.\n\\]\nThe original utility level is\n\\[\nu_0\n=\n40(80)^2\n=\n256000.\n\\]\nNow suppose the normalized price of coffee rises from\n\\[\np_x=1\n\\]\nto\n\\[\np_x'=8.\n\\]\nWith income unchanged,\n\\[\nx_1\n=\n\\frac{120}{3(8)}\n=\n5.\n\\]\nSo the total effect is\n\\[\nTE\n=\nx_1-x_0\n=\n5-40\n=\n-35.\n\\]\nWe know demand fell by 35 units, but we still have not separated why."
   },
   {
     "objectID": "blog/posts/post1/index.html#step-1-the-substitution-effect",
     "href": "blog/posts/post1/index.html#step-1-the-substitution-effect",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "Step 1: The Substitution Effect",
     "text": "Step 1: The Substitution Effect\nTo isolate the substitution effect, hold the consumer at the original utility level and ask how the consumer would respond to the new relative prices. This gives Hicksian, or compensated, demand. In the standard Slutsky equation, this Hicksian demand measures the substitution effect.\nWe solve\n\\[\n\\min_{x,y}\n\\;\np_x'x+p_yy\n\\]\nsubject to\n\\[\nxy^2=u_0.\n\\]\nThe Lagrangian is\n\\[\n\\mathcal{L}\n=\np_x'x+p_yy\n+\n\\mu(u_0-xy^2).\n\\]\nThe first-order conditions are\n\\[\np_x'\n=\n\\mu y^2\n\\]\nand\n\\[\np_y\n=\n2\\mu xy.\n\\]\nDividing them gives\n\\[\n\\frac{p_x'}{p_y}\n=\n\\frac{y}{2x},\n\\]\nso\n\\[\ny\n=\n\\frac{2p_x'}{p_y}x.\n\\]\nSubstituting into the utility constraint,\n\\[\nx\n\\left(\n\\frac{2p_x'}{p_y}x\n\\right)^2\n=\nu_0,\n\\]\nwhich gives\n\\[\n4\n\\frac{(p_x')^2}{p_y^2}\nx^3\n=\nu_0.\n\\]\nTherefore, the Hicksian demand for coffee is\n\\[\nh_x(p_x',p_y,u_0)\n=\n\\left(\n\\frac{u_0p_y^2}\n{4(p_x')^2}\n\\right)^{1/3}.\n\\]\nUsing\n\\[\nu_0=256000,\n\\qquad\np_x'=8,\n\\qquad\np_y=1,\n\\]\nwe obtain\n\\[\nx^H=10.\n\\]\nThe substitution effect is therefore\n\\[\nSE\n=\nx^H-x_0\n=\n10-40\n=\n-30.\n\\]\nEven with utility held constant, coffee is relatively more expensive, so the consumer substitutes away from it."
   },
   {
     "objectID": "blog/posts/post1/index.html#step-2-the-income-effect",
     "href": "blog/posts/post1/index.html#step-2-the-income-effect",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "Step 2: The Income Effect",
     "text": "Step 2: The Income Effect\nNext, remove the hypothetical compensation and return the consumer to the original income.\nCoffee demand falls from 10 to 5, so\n\\[\nIE\n=\nx_1-x^H\n=\n5-10\n=\n-5.\n\\]\nNominal income has not changed, but the higher coffee price has reduced real purchasing power.\nTherefore,\n\\[\n\\text{Total Effect}\n=\n\\text{Substitution Effect}\n+\n\\text{Income Effect},\n\\]\nand\n\\[\n-35\n=\n-30+(-5).\n\\]\nThe example can be summarized as\n\\[\n\\boxed{\n40\n\\rightarrow\n10\n\\rightarrow\n5\n}\n\\]\nwhere the first movement is the substitution effect and the second is the income effect."
   },
   {
     "objectID": "blog/posts/post1/index.html#visualizing-the-decomposition",
     "href": "blog/posts/post1/index.html#visualizing-the-decomposition",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "Visualizing the Decomposition",
     "text": "Visualizing the Decomposition\n\n\n\nThe Slutsky decomposition separates the total response to a price change into a substitution effect and an income effect.\n\n\nIn the figure, \\(x_1\\) represents coffee and \\(x_2\\) represents all other goods. Point A is the original choice. Point B is the compensated choice, so A to B is the substitution effect. Removing the compensation moves the consumer from B to C, which is the income effect. Together, they give the total movement from A to C."
   },
   {
     "objectID": "blog/posts/post1/index.html#from-the-example-to-the-slutsky-equation",
     "href": "blog/posts/post1/index.html#from-the-example-to-the-slutsky-equation",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "From the Example to the Slutsky Equation",
     "text": "From the Example to the Slutsky Equation\nThe same idea can be written more generally using the duality relationship\n\\[\nx_i(p,e(p,\\bar{u}))\n=\nh_i(p,\\bar{u}).\n\\]\nDifferentiate both sides with respect to \\(p_j\\):\n\\[\n\\frac{\\partial x_i}{\\partial p_j}\n+\n\\frac{\\partial x_i}{\\partial m}\n\\frac{\\partial e}{\\partial p_j}\n=\n\\frac{\\partial h_i}{\\partial p_j}.\n\\]\nBy Shephard’s Lemma,\n\\[\n\\frac{\\partial e}{\\partial p_j}\n=\nh_j(p,\\bar{u}).\n\\]\nAt the corresponding income level,\n\\[\nh_j(p,\\bar{u})\n=\nx_j(p,m).\n\\]\nTherefore,\n\\[\n\\frac{\\partial x_i}{\\partial p_j}\n+\nx_j\n\\frac{\\partial x_i}{\\partial m}\n=\n\\frac{\\partial h_i}{\\partial p_j}.\n\\]\nRearranging gives the Slutsky equation:\n\\[\n\\boxed{\n\\frac{\\partial x_i}{\\partial p_j}\n=\n\\frac{\\partial h_i}{\\partial p_j}\n-\nx_j\n\\frac{\\partial x_i}{\\partial m}\n}\n\\]\nThe left side is the total price effect. The first term on the right is the compensated substitution effect, while the second captures the income effect."
   },
   {
     "objectID": "blog/posts/post1/index.html#interpreting-the-decomposition",
     "href": "blog/posts/post1/index.html#interpreting-the-decomposition",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "Interpreting the Decomposition",
     "text": "Interpreting the Decomposition\nFor an own-price change,\n\\[\n\\frac{\\partial h_i}{\\partial p_i}\n\\leq 0.\n\\]\nSo the substitution effect is always non-positive: holding utility constant, a consumer does not substitute toward a good simply because it became relatively more expensive.\nThe income effect depends on the type of good. For a normal good, it reinforces the substitution effect after a price increase. For an inferior good, it works in the opposite direction. In the rare case of a Giffen good, the income effect can be strong enough to outweigh the substitution effect."
   },
   {
     "objectID": "blog/posts/post1/index.html#takeaway",
     "href": "blog/posts/post1/index.html#takeaway",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "Takeaway",
     "text": "Takeaway\nThe main idea of the Slutsky decomposition is that a price change affects demand through two separate channels: relative prices and real purchasing power. In the numerical example, coffee demand falls from 40 to 5 units. Of that total decline, 30 units come from the substitution effect and 5 units come from the income effect. The compensated choice allows us to separate these two forces, even though the compensation itself is only hypothetical. More generally, the Slutsky equation shows how the total effect of a price change can be decomposed into substitution and income effects. This helps us understand not only that demand changes when prices change, but more importantly, why it changes."
   },
   {
     "objectID": "blog/posts/post1/index.html#data-source",
     "href": "blog/posts/post1/index.html#data-source",
-    "title": "First Blog Post: When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
+    "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "Data Source",
     "text": "Data Source\nNo external data are used in the numerical example. All numerical values are hypothetical and are used only to illustrate the Slutsky decomposition. The Slutsky decomposition figure is from Dr. Lipsitz’s Class_03_EMP_and_Slutsky.pptx, slide 17. The idea for this blog post was also inspired by what we recently discussed in Dr. Lipsitz’s Applied Microeconomics class."
   }
