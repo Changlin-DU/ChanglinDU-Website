@@ -8,6 +8,10 @@ categories:
 ---
 
 ![](opening_figure.png){width="500px"}
+
+
+
+
 Today, I want to discuss the **Slutsky decomposition**, because I think it is one of those ideas that looks much harder when we first see the equations than it really is.
 
 Suppose the price of coffee goes up. The first reaction is simple: coffee is more expensive, so I buy less of it. But that answer combines two different forces. First, coffee is now more expensive relative to other goods, so I have a reason to substitute away from it. Second, even if my income does not change, the same income buys less than before, so my real purchasing power falls.
