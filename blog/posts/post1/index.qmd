@@ -8,9 +8,6 @@ categories:
 ---
 
 ![](opening_figure.png){width="500px"}
-
-Hello everyone, welcome to my first blog post! 
-
 Today, I want to discuss the **Slutsky decomposition**, because I think it is one of those ideas that looks much harder when we first see the equations than it really is.
 
 Suppose the price of coffee goes up. The first reaction is simple: coffee is more expensive, so I buy less of it. But that answer combines two different forces. First, coffee is now more expensive relative to other goods, so I have a reason to substitute away from it. Second, even if my income does not change, the same income buys less than before, so my real purchasing power falls.
@@ -363,7 +360,7 @@ where the first movement is the substitution effect and the second is the income
 
 ## Visualizing the Decomposition
 
-![The Slutsky decomposition separates the total response to a price change into a substitution effect and an income effect.](slutsky_decomposition.png){fig-align="center" width="85%"}
+![The Slutsky decomposition separates the total response to a price change into a substitution effect and an income effect. This graph is from Dr. Lipsitz's *Class_03_EMP_and_Slutsky.pptx*, slide 17.](slutsky_decomposition.png){fig-align="center" width="85%"}
 
 In the figure, $x_1$ represents coffee and $x_2$ represents all other goods. Point A is the original choice. Point B is the compensated choice, so A to B is the **substitution effect**. Removing the compensation moves the consumer from B to C, which is the **income effect**. Together, they give the total movement from A to C.
 
