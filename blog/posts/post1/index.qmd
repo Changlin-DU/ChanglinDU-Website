@@ -9,8 +9,7 @@ categories:
 
 ![](opening_figure.png){width="500px"}
 
-
-
+Hello everyone, I am so happy to share my first blog post!
 
 Today, I want to discuss the **Slutsky decomposition**, because I think it is one of those ideas that looks much harder when we first see the equations than it really is.
 

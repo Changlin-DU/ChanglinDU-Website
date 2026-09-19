@@ -46,7 +46,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?\n\n\n\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhen Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/post1/Untitled.html",
@@ -186,7 +186,7 @@
     "href": "blog/posts/post1/index.html",
     "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "",
-    "text": "Today, I want to discuss the Slutsky decomposition, because I think it is one of those ideas that looks much harder when we first see the equations than it really is.\nSuppose the price of coffee goes up. The first reaction is simple: coffee is more expensive, so I buy less of it. But that answer combines two different forces. First, coffee is now more expensive relative to other goods, so I have a reason to substitute away from it. Second, even if my income does not change, the same income buys less than before, so my real purchasing power falls.\nThe difficult part is that these two effects happen at the same time. We only observe the move from the original choice to the final choice. We do not directly see how much came from substitution and how much came from lower purchasing power. Economists therefore introduce a hypothetical compensation step. We imagine giving the consumer just enough income to stay at the original utility level after the price change. This is not meant to describe what literally happens; it is a thought experiment that isolates the response to the new relative prices. Once that compensation is removed, the remaining change is the income effect.\nThe basic idea is\n\\[\n\\text{Total Effect}\n=\n\\text{Substitution Effect}\n+\n\\text{Income Effect}.\n\\]\nThe example below makes this separation concrete and then connects it to the general Slutsky equation."
+    "text": "Hello everyone, I am so happy to share my first blog post!\nToday, I want to discuss the Slutsky decomposition, because I think it is one of those ideas that looks much harder when we first see the equations than it really is.\nSuppose the price of coffee goes up. The first reaction is simple: coffee is more expensive, so I buy less of it. But that answer combines two different forces. First, coffee is now more expensive relative to other goods, so I have a reason to substitute away from it. Second, even if my income does not change, the same income buys less than before, so my real purchasing power falls.\nThe difficult part is that these two effects happen at the same time. We only observe the move from the original choice to the final choice. We do not directly see how much came from substitution and how much came from lower purchasing power. Economists therefore introduce a hypothetical compensation step. We imagine giving the consumer just enough income to stay at the original utility level after the price change. This is not meant to describe what literally happens; it is a thought experiment that isolates the response to the new relative prices. Once that compensation is removed, the remaining change is the income effect.\nThe basic idea is\n\\[\n\\text{Total Effect}\n=\n\\text{Substitution Effect}\n+\n\\text{Income Effect}.\n\\]\nThe example below makes this separation concrete and then connects it to the general Slutsky equation."
   },
   {
     "objectID": "blog/posts/post1/index.html#a-numerical-example",
@@ -243,5 +243,54 @@
     "title": "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition",
     "section": "Data Source",
     "text": "Data Source\nNo external data are used in the numerical example. All numerical values are hypothetical and are used only to illustrate the Slutsky decomposition. The Slutsky decomposition figure is from Dr. Lipsitz’s Class_03_EMP_and_Slutsky.pptx, slide 17. The idea for this blog post was also inspired by what we recently discussed in Dr. Lipsitz’s Applied Microeconomics class."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html",
+    "href": "blog/posts/post2/index.html",
+    "title": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?",
+    "section": "",
+    "text": "Hello everyone! For my second blog post, I wanted to use web scraping to answer a question that matters to many students: which data or technology career offers the best combination of pay and opportunity?\nA high salary by itself does not necessarily make a career the best choice. Some high-paying occupations have few openings, while others require graduate education. Therefore, I compared median pay, projected growth, job openings, and preparation requirements across ten computer, data, and mathematical occupations. I also selected occupations that represent software development, information systems, cybersecurity, databases, and quantitative analysis."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#collecting-the-data-responsibly",
+    "href": "blog/posts/post2/index.html#collecting-the-data-responsibly",
+    "title": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?",
+    "section": "Collecting the Data Responsibly",
+    "text": "Collecting the Data Responsibly\nI collected the data from O*NET OnLine, a career-information website sponsored by the U.S. Department of Labor. Each occupation page reports 2025 median wages, 2024 employment, projected growth and openings for 2024–2034, a Job Zone, and typical education information.\nI used rvest to read ten public occupation pages. The basic scraping step looked like this:\n\nlibrary(rvest)\n\npage &lt;- read_html(profile_url)\n\nwage_section &lt;- page |&gt;\n  html_element(\"#WagesEmployment\")\n\nlabels &lt;- wage_section |&gt;\n  html_elements(\"dl &gt; dt\") |&gt;\n  html_text2()\n\nvalues &lt;- wage_section |&gt;\n  html_elements(\"dl &gt; dd\") |&gt;\n  html_text2()\n\nThe scraper pauses for two seconds between requests and saves every HTML page locally. If I run it again, it reads the saved files instead of contacting the website. I did not access pages behind a login, CAPTCHA, paywall, or another restriction.\nThe complete scraping code, saved HTML, data, and replication instructions are available in my GitHub repository."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#from-web-pages-to-comparable-numbers",
+    "href": "blog/posts/post2/index.html#from-web-pages-to-comparable-numbers",
+    "title": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?",
+    "section": "From Web Pages to Comparable Numbers",
+    "text": "From Web Pages to Comparable Numbers\nThe scraped values initially arrived as text. For example, an annual wage appeared inside a string containing both hourly and annual pay, and projected growth appeared as a phrase such as “Much faster than average (7% or higher).” I separated the wage fields, removed dollar signs and commas, converted openings into numbers, and ordered the growth categories from decline to much faster than average.\nTo summarize the tradeoffs, I created a balanced opportunity score:\n\\[\n\\text{Score}\n=\n100\n\\left(\n\\frac{\n\\text{wage percentile}\n+\n\\text{growth index}\n+\n\\text{openings percentile}\n}{3}\n\\right).\n\\]\nWage and openings were converted to percentile rankings within the ten careers, while the growth categories were placed on a zero-to-one scale. The score is not meant to declare one career universally “best.” It is a simple way to compare three factors using the same scale. Because nine of the ten occupations were classified as “much faster than average,” most of the differences in the final ranking came from wages and job openings."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#salary-tells-only-part-of-the-story",
+    "href": "blog/posts/post2/index.html#salary-tells-only-part-of-the-story",
+    "title": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?",
+    "section": "Salary Tells Only Part of the Story",
+    "text": "Salary Tells Only Part of the Story\n\n\n\n\n\n\nFigure 1: Median pay and projected annual openings across ten careers. Bubble size represents 2024 employment.\n\n\n\nFigure 1 shows why considering multiple measures matters. Computer and Information Research Scientists had the highest median annual wage at $140,300, but only 3,200 projected annual openings and a Job Zone Five classification. O*NET describes Job Zone Five occupations as requiring extensive preparation, often including graduate education.\nDatabase Architects also offered high pay at $139,500, but their 4,000 annual openings were small compared with broader occupations. Data Scientists combined a $120,230 median wage with 23,400 openings. Computer Systems Analysts had a lower median wage of $105,850 but 34,200 openings.\nThe clearest outlier was Software Developers. Their median annual wage was $135,980, and their 115,200 projected annual openings were more than three times the number for any other career in the comparison."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#turning-the-results-into-a-decision",
+    "href": "blog/posts/post2/index.html#turning-the-results-into-a-decision",
+    "title": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?",
+    "section": "Turning the Results into a Decision",
+    "text": "Turning the Results into a Decision\n\n\n\n\n\n\nFigure 2: Balanced opportunity ranking based on wages, projected growth, and annual openings.\n\n\n\nSoftware Developers ranked first with a balanced score of 92.6. They combined high pay, a much-faster-than-average growth category, the most openings, and a Job Zone Four classification. Database Architects ranked second, followed by Computer and Information Research Scientists.\nFor a student mainly interested in quantitative analysis rather than general software development, Data Scientists provide a more focused recommendation. They ranked fifth overall but offered a stronger balance of pay and openings than Statisticians or Operations Research Analysts. Strong programming skills are still valuable because data science increasingly overlaps with software development and database systems.\nDatabase Administrators ranked last and were the only occupation with a declining outlook. This does not mean database knowledge is unimportant. Instead, students interested in databases may be better served by combining SQL and database skills with cloud computing, architecture, programming, or data analysis."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#takeaway",
+    "href": "blog/posts/post2/index.html#takeaway",
+    "title": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?",
+    "section": "Takeaway",
+    "text": "Takeaway\nMy main takeaway is that students should not choose a career using salary alone. For the strongest overall combination of pay and demand, software development is the most practical recommendation in this comparison. For students committed to quantitative analysis, data science is a strong alternative. These results are national averages for ten selected careers, so interests, location, education costs, and working conditions should remain part of the final decision."
+  },
+  {
+    "objectID": "blog/posts/post2/index.html#reference",
+    "href": "blog/posts/post2/index.html#reference",
+    "title": "Which Tech Career Offers the Best Balance of Pay and Opportunity for College Students?",
+    "section": "Reference",
+    "text": "Reference\nThis post includes information from O*NET OnLine by the U.S. Department of Labor, Employment and Training Administration. The information is used under the CC BY 4.0 license. I cleaned and analyzed the data for this project."
   }
 ]
