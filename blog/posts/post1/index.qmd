@@ -2,12 +2,10 @@
 title: "When Coffee Gets More Expensive — Understanding the Slutsky Decomposition"
 date: 2026-09-13
 categories:
-  - personal
   - applied microeconomics
   - data science
+image: slutsky_decomposition.png
 ---
-
-![](opening_figure.png){width="500px"}
 
 Hello everyone, I am so happy to share my first blog post!
 
