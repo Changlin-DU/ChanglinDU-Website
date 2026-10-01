@@ -46,7 +46,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Unequal Paths Back: How Education Shaped the COVID-19 Unemployment Recovery\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhich Tech Career Offers the Best Balance of Pay and Opportunity for College Students?\n\n\n\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhen Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?\n\n\n\n\n\n\n\n\nOct 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nUnequal Paths Back: How Education Shaped the COVID-19 Unemployment Recovery\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhich Tech Career Offers the Best Balance of Pay and Opportunity for College Students?\n\n\n\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhen Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/post1/Untitled.html",
@@ -341,5 +341,47 @@
     "title": "Unequal Paths Back: How Education Shaped the COVID-19 Unemployment Recovery",
     "section": "Data Source",
     "text": "Data Source\nThis analysis uses IPUMS CPS Basic Monthly microdata. The underlying CPS data are provided by the U.S. Census Bureau and the U.S. Bureau of Labor Statistics. More information about early-pandemic employment classification is available from the Bureau of Labor Statistics."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html",
+    "href": "blog/posts/post4/index.html",
+    "title": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?",
+    "section": "",
+    "text": "Hello everyone and welcome back! I hope you all had a wonderful fall break! For my fourth blog post, I wanted to look at a question that has become difficult to ignore: how much less affordable has housing become since 2019?\nMy question is: how did housing affordability change across U.S. states from 2019 to 2024, and how much did higher mortgage rates add to the pressure?\nA rising home value is not enough to answer this question. A home can become more expensive without becoming less affordable if household income rises at the same pace. Financing conditions also matter because the same loan produces a much larger monthly payment at a higher interest rate."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#measuring-affordability",
+    "href": "blog/posts/post4/index.html#measuring-affordability",
+    "title": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?",
+    "section": "Measuring Affordability",
+    "text": "Measuring Affordability\nI use the U.S. Census Bureau’s 2019 and 2024 American Community Survey one-year estimates for median household income and the median value of owner-occupied housing units. I combine these data with the Freddie Mac 30-year fixed mortgage rate available through FRED.\nMy first measure is the home-value-to-income ratio. For state \\(s\\) in year \\(t\\), I calculate\n\\[\nR_{s,t}\n=\n\\frac{V_{s,t}}{Y_{s,t}},\n\\]\nwhere \\(V_{s,t}\\) is median home value and \\(Y_{s,t}\\) is median household income. A higher ratio means that a typical owner-occupied home is more expensive relative to annual income.\nI also compare the cumulative growth of home values and income from 2019 to 2024:\n\\[\ng_{X,s}\n=\n\\left(\n\\frac{X_{s,2024}}{X_{s,2019}}-1\n\\right)\n\\times 100.\n\\]\nFinally, I estimate a monthly mortgage payment under a consistent scenario: purchase at the median home value, a 20% down payment, and a 30-year fixed-rate mortgage. The standard fixed-payment formula is\n\\[\nM_{s,t}\n=\nP_{s,t}\n\\left[\n\\frac{r_t(1+r_t)^{360}}\n{(1+r_t)^{360}-1}\n\\right],\n\\]\nwhere \\(P_{s,t}\\) is 80% of median home value and \\(r_t\\) is the monthly mortgage rate. I then calculate the estimated annual payment burden as\n\\[\nB_{s,t}\n=\n\\frac{12M_{s,t}}{Y_{s,t}}\n\\times 100.\n\\]\nThe complete data download, cleaning, calculations, and visualization code is available in my GitHub repository."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#affordability-worsened-almost-everywhere",
+    "href": "blog/posts/post4/index.html#affordability-worsened-almost-everywhere",
+    "title": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?",
+    "section": "Affordability Worsened Almost Everywhere",
+    "text": "Affordability Worsened Almost Everywhere\n\n\n\n\n\n\nFigure 1: Change in the median home-value-to-income ratio across states from 2019 to 2024.\n\n\n\nFigure 1 shows that the home-value-to-income ratio increased in 50 of the 51 jurisdictions in the analysis. Washington, D.C. was the only exception. Across all states and D.C., the median ratio rose from 3.42 in 2019 to 4.24 in 2024.\nThis means that in the median state, the value of a typical owner-occupied home increased from about 3.4 years of median household income to more than 4.2 years. The map also shows that the deterioration was not limited to traditionally expensive coastal markets. Several Mountain West and Southern states experienced especially large changes."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#home-values-moved-faster-than-income",
+    "href": "blog/posts/post4/index.html#home-values-moved-faster-than-income",
+    "title": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?",
+    "section": "Home Values Moved Faster Than Income",
+    "text": "Home Values Moved Faster Than Income\n\n\n\n\n\n\nFigure 2: Cumulative growth in median home values and median household income by state.\n\n\n\nFigure 2 explains why the ratios increased. The median state-level increase in home values was 49.4%, while the median increase in household income was 24.5%. Home values outpaced income in 50 of 51 jurisdictions.\nRhode Island had the largest increase in its ratio, rising from 3.98 to 5.46. Idaho, Utah, Montana, and Tennessee followed. These are not necessarily the five most expensive places in level terms. Instead, they experienced some of the largest deteriorations relative to their own 2019 income and home-value levels."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#mortgage-rates-added-a-second-affordability-shock",
+    "href": "blog/posts/post4/index.html#mortgage-rates-added-a-second-affordability-shock",
+    "title": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?",
+    "section": "Mortgage Rates Added a Second Affordability Shock",
+    "text": "Mortgage Rates Added a Second Affordability Shock\n\n\n\n\n\n\nFigure 3: Estimated annual mortgage principal and interest as a percentage of median household income in 2019 and 2024.\n\n\n\nFigure 3 adds the cost of borrowing. The annual average 30-year mortgage rate increased from 3.94% in 2019 to 6.72% in 2024. When I apply those rates to the same mortgage assumptions, the median estimated payment burden rises from 15.6% to 26.3% of median household income.\nThe highest 2024 estimate is Hawaii at 54.0%, followed by California at 47.1% and Washington, D.C. at 41.5%. These calculations are intentionally simplified. They exclude property taxes, insurance, maintenance, closing costs, and HOA fees. ACS home values are reported values for existing owner-occupied homes rather than observed purchase prices, while median household income includes both renter and owner households. The measure is therefore best read as a consistent state-level comparison, not as the exact budget of a typical buyer.\nThis analysis is descriptive. It shows where affordability changed and how the three measures moved together, but it does not identify why particular states experienced larger changes than others."
+  },
+  {
+    "objectID": "blog/posts/post4/index.html#takeaway",
+    "href": "blog/posts/post4/index.html#takeaway",
+    "title": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?",
+    "section": "Takeaway",
+    "text": "Takeaway\nOverall, my main takeaway is that the affordability problem between 2019 and 2024 had two parts. Home values rose much faster than household incomes in almost every state, increasing the amount a buyer would need to borrow. At the same time, higher mortgage rates made each borrowed dollar more expensive.\nLooking only at home values would miss the role of income, while looking only at mortgage rates would miss how much the underlying value-to-income relationship had already changed. Taken together, the three visualizations show why buying a typical home became substantially harder across most of the country."
   }
 ]
