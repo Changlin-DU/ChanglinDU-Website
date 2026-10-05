@@ -8,7 +8,9 @@ categories:
 image: figure_1_affordability_change_map_copy.png
 ---
 
-Hello everyone and welcome back! I hope you all had a wonderful fall break! For my fourth blog post, I decided to look at housing affordability. Home values have increased in many parts of the country, but a higher home value does not tell the whole story. What matters is how that value compares with household income and how much it costs to finance a purchase.
+Hello everyone and welcome back! I hope you all had a wonderful fall break! For my fourth blog post, I decided to look at housing affordability. I became interested in this topic because discussions about housing often begin and end with home prices. However, the price itself does not tell me whether a home is actually affordable. I also want to know whether household incomes are keeping up and how much it now costs to finance a purchase.
+
+This question also feels relevant to students and young workers. Current housing conditions affect where people can afford to live, how much they need to save, and whether moving for school or work is realistic. Looking across states can also show whether the national story applies everywhere or hides important regional differences.
 
 My question is: **how did housing affordability change across U.S. states from 2019 to 2024, and how much did higher mortgage rates add to the pressure?**
 
@@ -88,6 +90,10 @@ This is a descriptive analysis. It shows where affordability changed, but it doe
 
 ## Takeaway
 
-My main takeaway is that the change in housing affordability had two parts. Home values rose much faster than household incomes in almost every part of the country, increasing the amount a buyer would need to borrow. At the same time, higher mortgage rates made that borrowing more expensive.
+Generally speaking, this analysis gives me three main takeaways:
 
-Looking only at home values would miss the role of income, while looking only at mortgage rates would miss how much the value-to-income relationship had already changed. The combination of both changes is what made buying a typical home substantially harder across most of the country.
+- The home-value-to-income ratio increased in every state between 2019 and 2024. Washington, D.C. was the only exception.
+- Home values grew much faster than household incomes. The median state-level increases were 49.4% for home values and 24.5% for income.
+- Higher borrowing costs made the change more difficult for potential buyers. The average mortgage rate rose from 3.94% to 6.72%, while the median estimated payment burden increased from 15.6% to 26.3% of household income.
+
+For me, the most important point is that no single number fully explains housing affordability. Looking only at home values would miss the role of income, while looking only at mortgage rates would miss how much the value-to-income relationship had already changed. Both changes worked in the same direction, making a typical home substantially harder to buy across most of the country.
