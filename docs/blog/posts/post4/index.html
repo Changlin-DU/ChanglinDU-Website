@@ -183,20 +183,19 @@ window.Quarto = {
 </header>
 
 
-<p>Hello everyone and welcome back! I hope you all had a wonderful fall break! For my fourth blog post, I wanted to look at a question that has become difficult to ignore: how much less affordable has housing become since 2019?</p>
+<p>Hello everyone and welcome back! I hope you all had a wonderful fall break! For my fourth blog post, I decided to look at housing affordability. Home values have increased in many parts of the country, but a higher home value does not tell the whole story. What matters is how that value compares with household income and how much it costs to finance a purchase.</p>
 <p>My question is: <strong>how did housing affordability change across U.S. states from 2019 to 2024, and how much did higher mortgage rates add to the pressure?</strong></p>
-<p>A rising home value is not enough to answer this question. A home can become more expensive without becoming less affordable if household income rises at the same pace. Financing conditions also matter because the same loan produces a much larger monthly payment at a higher interest rate.</p>
 <section id="measuring-affordability" class="level2">
 <h2 class="anchored" data-anchor-id="measuring-affordability">Measuring Affordability</h2>
 <p>I use the U.S. Census Bureau’s <a href="https://www.census.gov/programs-surveys/acs/data.html">2019 and 2024 American Community Survey</a> one-year estimates for median household income and the median value of owner-occupied housing units. I combine these data with the Freddie Mac 30-year fixed mortgage rate available through <a href="https://fred.stlouisfed.org/series/MORTGAGE30US">FRED</a>.</p>
-<p>My first measure is the home-value-to-income ratio. For state <span class="math inline">\(s\)</span> in year <span class="math inline">\(t\)</span>, I calculate</p>
+<p>First, I calculate the home-value-to-income ratio for state <span class="math inline">\(s\)</span> in year <span class="math inline">\(t\)</span>:</p>
 <p><span class="math display">\[
 R_{s,t}
 =
 \frac{V_{s,t}}{Y_{s,t}},
 \]</span></p>
-<p>where <span class="math inline">\(V_{s,t}\)</span> is median home value and <span class="math inline">\(Y_{s,t}\)</span> is median household income. A higher ratio means that a typical owner-occupied home is more expensive relative to annual income.</p>
-<p>I also compare the cumulative growth of home values and income from 2019 to 2024:</p>
+<p>where <span class="math inline">\(V_{s,t}\)</span> is median home value and <span class="math inline">\(Y_{s,t}\)</span> is median household income. A higher ratio means that a typical owner-occupied home costs more relative to annual household income.</p>
+<p>I also calculate the cumulative growth of home values and income from 2019 to 2024:</p>
 <p><span class="math display">\[
 g_{X,s}
 =
@@ -205,7 +204,7 @@ g_{X,s}
 \right)
 \times 100.
 \]</span></p>
-<p>Finally, I estimate a monthly mortgage payment under a consistent scenario: purchase at the median home value, a 20% down payment, and a 30-year fixed-rate mortgage. The standard fixed-payment formula is</p>
+<p>For the last measure, I estimate a monthly mortgage payment using the same assumptions for every state: purchase at the median home value, a 20% down payment, and a 30-year fixed-rate mortgage. The payment is</p>
 <p><span class="math display">\[
 M_{s,t}
 =
@@ -215,7 +214,7 @@ P_{s,t}
 {(1+r_t)^{360}-1}
 \right],
 \]</span></p>
-<p>where <span class="math inline">\(P_{s,t}\)</span> is 80% of median home value and <span class="math inline">\(r_t\)</span> is the monthly mortgage rate. I then calculate the estimated annual payment burden as</p>
+<p>where <span class="math inline">\(P_{s,t}\)</span> is 80% of median home value and <span class="math inline">\(r_t\)</span> is the monthly mortgage rate. I convert this payment into an annual share of median household income:</p>
 <p><span class="math display">\[
 B_{s,t}
 =
@@ -236,8 +235,8 @@ Figure&nbsp;1: Change in the median home-value-to-income ratio across states fro
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-affordability-map" class="quarto-xref">Figure&nbsp;1</a> shows that the home-value-to-income ratio increased in 50 of the 51 jurisdictions in the analysis. Washington, D.C. was the only exception. Across all states and D.C., the median ratio rose from 3.42 in 2019 to 4.24 in 2024.</p>
-<p>This means that in the median state, the value of a typical owner-occupied home increased from about 3.4 years of median household income to more than 4.2 years. The map also shows that the deterioration was not limited to traditionally expensive coastal markets. Several Mountain West and Southern states experienced especially large changes.</p>
+<p><a href="#fig-affordability-map" class="quarto-xref">Figure&nbsp;1</a> gives the broad picture. The home-value-to-income ratio increased in every state, while Washington, D.C. was the only exception. Across the 50 states and D.C., the median ratio rose from 3.42 in 2019 to 4.24 in 2024.</p>
+<p>In other words, the median state moved from a typical owner-occupied home being worth about 3.4 years of median household income to more than 4.2 years. The pattern was also not limited to places already known for expensive housing. Several Mountain West and Southern states experienced some of the largest increases.</p>
 </section>
 <section id="home-values-moved-faster-than-income" class="level2">
 <h2 class="anchored" data-anchor-id="home-values-moved-faster-than-income">Home Values Moved Faster Than Income</h2>
@@ -251,11 +250,11 @@ Figure&nbsp;2: Cumulative growth in median home values and median household inco
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-growth-comparison" class="quarto-xref">Figure&nbsp;2</a> explains why the ratios increased. The median state-level increase in home values was 49.4%, while the median increase in household income was 24.5%. Home values outpaced income in 50 of 51 jurisdictions.</p>
-<p>Rhode Island had the largest increase in its ratio, rising from 3.98 to 5.46. Idaho, Utah, Montana, and Tennessee followed. These are not necessarily the five most expensive places in level terms. Instead, they experienced some of the largest deteriorations relative to their own 2019 income and home-value levels.</p>
+<p><a href="#fig-growth-comparison" class="quarto-xref">Figure&nbsp;2</a> shows what is behind that pattern. The median state-level increase in home values was 49.4%, while the median increase in household income was 24.5%. Home values grew faster than income in every state; D.C. was again the only exception.</p>
+<p>Rhode Island had the largest increase in its ratio, which rose from 3.98 to 5.46. Idaho, Utah, Montana, and Tennessee followed. This does not mean that these were the five most expensive housing markets in 2024. It means that their affordability measures deteriorated the most relative to where they started in 2019.</p>
 </section>
-<section id="mortgage-rates-added-a-second-affordability-shock" class="level2">
-<h2 class="anchored" data-anchor-id="mortgage-rates-added-a-second-affordability-shock">Mortgage Rates Added a Second Affordability Shock</h2>
+<section id="mortgage-rates-added-more-pressure" class="level2">
+<h2 class="anchored" data-anchor-id="mortgage-rates-added-more-pressure">Mortgage Rates Added More Pressure</h2>
 <div id="fig-mortgage-burden" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Dumbbell chart comparing estimated mortgage-payment burdens in 2019 and 2024 for the fifteen jurisdictions with the highest 2024 estimates.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-mortgage-burden-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -266,14 +265,14 @@ Figure&nbsp;3: Estimated annual mortgage principal and interest as a percentage 
 </figcaption>
 </figure>
 </div>
-<p><a href="#fig-mortgage-burden" class="quarto-xref">Figure&nbsp;3</a> adds the cost of borrowing. The annual average 30-year mortgage rate increased from 3.94% in 2019 to 6.72% in 2024. When I apply those rates to the same mortgage assumptions, the median estimated payment burden rises from 15.6% to 26.3% of median household income.</p>
-<p>The highest 2024 estimate is Hawaii at 54.0%, followed by California at 47.1% and Washington, D.C. at 41.5%. These calculations are intentionally simplified. They exclude property taxes, insurance, maintenance, closing costs, and HOA fees. ACS home values are reported values for existing owner-occupied homes rather than observed purchase prices, while median household income includes both renter and owner households. The measure is therefore best read as a consistent state-level comparison, not as the exact budget of a typical buyer.</p>
-<p>This analysis is descriptive. It shows where affordability changed and how the three measures moved together, but it does not identify why particular states experienced larger changes than others.</p>
+<p><a href="#fig-mortgage-burden" class="quarto-xref">Figure&nbsp;3</a> brings borrowing costs into the comparison. The annual average 30-year mortgage rate increased from 3.94% in 2019 to 6.72% in 2024. Using the same mortgage assumptions, the median estimated payment burden increased from 15.6% to 26.3% of median household income.</p>
+<p>Hawaii had the highest 2024 estimate at 54.0%, followed by California at 47.1% and Washington, D.C. at 41.5%. These estimates are simplified. They exclude property taxes, insurance, maintenance, closing costs, and HOA fees. ACS home values are reported values for existing owner-occupied homes, while median household income includes both renters and homeowners. I therefore use this measure as a consistent comparison across states, not as the exact budget of a typical buyer.</p>
+<p>This is a descriptive analysis. It shows where affordability changed, but it does not explain why one state experienced a larger change than another.</p>
 </section>
 <section id="takeaway" class="level2">
 <h2 class="anchored" data-anchor-id="takeaway">Takeaway</h2>
-<p>Overall, my main takeaway is that the affordability problem between 2019 and 2024 had two parts. Home values rose much faster than household incomes in almost every state, increasing the amount a buyer would need to borrow. At the same time, higher mortgage rates made each borrowed dollar more expensive.</p>
-<p>Looking only at home values would miss the role of income, while looking only at mortgage rates would miss how much the underlying value-to-income relationship had already changed. Taken together, the three visualizations show why buying a typical home became substantially harder across most of the country.</p>
+<p>My main takeaway is that the change in housing affordability had two parts. Home values rose much faster than household incomes in almost every part of the country, increasing the amount a buyer would need to borrow. At the same time, higher mortgage rates made that borrowing more expensive.</p>
+<p>Looking only at home values would miss the role of income, while looking only at mortgage rates would miss how much the value-to-income relationship had already changed. The combination of both changes is what made buying a typical home substantially harder across most of the country.</p>
 
 
 </section>
