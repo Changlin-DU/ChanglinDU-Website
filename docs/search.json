@@ -46,7 +46,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?\n\n\n\n\n\n\n\n\nOct 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nUnequal Paths Back: How Education Shaped the COVID-19 Unemployment Recovery\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhich Tech Career Offers the Best Balance of Pay and Opportunity for College Students?\n\n\n\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhen Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "California’s Income Divide: Where Are High- and Low-Income Communities Concentrated?\n\n\n\n\n\n\n\n\nOct 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPriced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?\n\n\n\n\n\n\n\n\nOct 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nUnequal Paths Back: How Education Shaped the COVID-19 Unemployment Recovery\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhich Tech Career Offers the Best Balance of Pay and Opportunity for College Students?\n\n\n\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhen Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/post1/Untitled.html",
@@ -390,5 +390,40 @@
     "title": "Priced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?",
     "section": "Mortgage Rates Added More Pressure",
     "text": "Mortgage Rates Added More Pressure\n\n\n\n\n\n\nFigure 3: Estimated annual mortgage principal and interest as a percentage of median household income in 2019 and 2024.\n\n\n\nFigure 3 brings borrowing costs into the comparison. The annual average 30-year mortgage rate increased from 3.94% in 2019 to 6.72% in 2024. Using the same mortgage assumptions, the median estimated payment burden increased from 15.6% to 26.3% of median household income.\nHawaii had the highest 2024 estimate at 54.0%, followed by California at 47.1% and Washington, D.C. at 41.5%. These estimates are simplified. They exclude property taxes, insurance, maintenance, closing costs, and HOA fees. ACS home values are reported values for existing owner-occupied homes, while median household income includes both renters and homeowners. I therefore use this measure as a consistent comparison across states, not as the exact budget of a typical buyer.\nThis is a descriptive analysis. It shows where affordability changed, but it does not explain why one state experienced a larger change than another."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html",
+    "href": "blog/posts/post5/index.html",
+    "title": "California’s Income Divide: Where Are High- and Low-Income Communities Concentrated?",
+    "section": "",
+    "text": "Hello everyone and welcome back! I know we all had a tough midterm week, but I hope we all can survive! So, today I want to talk about California! California has always been one of my favorite places to visit. I have been there several times, and in fall 2024, I studied at the University of Southern California for one semester. Living in Los Angeles was different from visiting it for a short trip. I began to notice how quickly the surroundings could change from one area to another.\nNear USC, I often saw litter, visible homelessness, and streets where I felt less safe. When I went to UCLA in Westwood or nearby Beverly Hills, the area usually felt cleaner, quieter, and more orderly. The homes and public spaces also looked very different, even though these places were in the same city.\nI knew that my personal impressions were not enough to prove an income pattern. However, they led me to a question that I could study with data: where are high- and low-income communities concentrated across California?"
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#data-and-method",
+    "href": "blog/posts/post5/index.html#data-and-method",
+    "title": "California’s Income Divide: Where Are High- and Low-Income Communities Concentrated?",
+    "section": "Data and Method",
+    "text": "Data and Method\nI use census-tract data from the U.S. Census Bureau’s 2020–2024 American Community Survey. A census tract is a small geographic area that usually contains a few thousand people, so it gives a more local view than a county or state average.\nMy main variable is median household income, B19013_001. I also use total population, B01003_001, to identify tracts with no reported population. Because the ACS is a survey, these values are estimates rather than exact counts.\nThe data include 9,129 California tracts. Of these, 9,007 have usable income estimates. I sort them into five equal groups based on California’s income distribution. The lowest group has a median household income of $67,007 or less, while the highest group is above $141,538. These categories are comparisons within California, not official definitions of low or high income. Tracts without usable estimates are shown in dark gray.\nI used R to download and clean the data, join the income estimates to tract boundaries, and create the figures. I also transformed the spatial data to the California Albers projection, EPSG:3310. The complete code, data, results, and replication instructions are in my GitHub repository."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#what-does-the-map-show",
+    "href": "blog/posts/post5/index.html#what-does-the-map-show",
+    "title": "California’s Income Divide: Where Are High- and Low-Income Communities Concentrated?",
+    "section": "What Does the Map Show?",
+    "text": "What Does the Map Show?\n\n\n\n\n\n\nFigure 1: Median household income group by California census tract. The inset maps show the San Francisco Bay Area and Southern California.\n\n\n\nWhat stood out to me first in Figure 1 was the concentration of highest-income tracts around the San Francisco Bay Area. The dark-blue areas extend across several nearby counties, so the pattern is not limited to San Francisco itself.\nLower-income tracts are more common in parts of the Central Valley, northern California, and southeastern California. Southern California looks more mixed. High-, middle-, and low-income tracts appear close to one another across the Los Angeles region. This matched what I had noticed while living there. The divide is not only between separate regions; it can also appear within the same metropolitan area.\nOne detail requires care. Rural tracts often cover much more land than urban tracts, but they may contain fewer people. The map shows where each income group is located. A larger colored area does not necessarily represent a larger population."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#comparing-counties",
+    "href": "blog/posts/post5/index.html#comparing-counties",
+    "title": "California’s Income Divide: Where Are High- and Low-Income Communities Concentrated?",
+    "section": "Comparing Counties",
+    "text": "Comparing Counties\n\n\n\n\n\n\nFigure 2: California counties with the largest shares of census tracts in the highest and lowest statewide income quintiles.\n\n\n\nFor Figure 2, I compare the share of each county’s valid tracts in the highest or lowest income group. I include only counties with at least 20 valid tracts so that counties with very few observations do not receive misleading rankings.\nSan Mateo has the largest high-income share at 68.6%, followed by Santa Clara at 65.2% and Marin at 57.4%. All three are in the Bay Area. Imperial has the largest low-income share at 59.0%. Humboldt, Merced, Tulare, Lake, Kern, Butte, and Fresno also have large shares of tracts in the lowest group.\nThese percentages describe census tracts, not residents. For example, San Mateo’s result does not mean that 68.6% of its residents are in the highest income group."
+  },
+  {
+    "objectID": "blog/posts/post5/index.html#what-i-learned",
+    "href": "blog/posts/post5/index.html#what-i-learned",
+    "title": "California’s Income Divide: Where Are High- and Low-Income Communities Concentrated?",
+    "section": "What I Learned",
+    "text": "What I Learned\nThe maps cannot tell me why these differences exist. Housing costs, job locations, transportation, and local history may all matter, but this analysis does not test those causes.\nWhat I learned is that California’s income divide exists at more than one geographic level. There are broad differences across the state, but there are also sharp differences within Los Angeles and other urban areas. My experience in Los Angeles first made me notice the contrast. The GIS data show that it is part of a wider pattern that state and county averages can easily hide."
   }
 ]
