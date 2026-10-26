@@ -4,7 +4,7 @@ title: ""
 
 ::::: columns
 ::: {.column width="35%"}
-![](images/myprofile_image.png){width="100%"}
+![](images/myphoto.png){width="100%"}
 :::
 
 ::: {.column width="65%"}
@@ -19,10 +19,10 @@ Welcome to my personal website.
 ### Quick Links
 
 <div>
-  <a href="https://github.com/USERNAME"><i class="bi bi-github fs-3"></i></a>
-  <a href="https://linkedin.com/in/USERNAME"><i class="bi bi-linkedin fs-3"></i></a>
+  <a href="https://github.com/Changlin-DU"><i class="bi bi-github fs-3"></i></a>
+  <a href="https://www.linkedin.com/in/changlin-du/"><i class="bi bi-linkedin fs-3"></i></a>
   <a href="resume.qmd"><i class="bi bi-file-earmark-person-fill fs-3"></i></a>
-  <a href="mailto:student@email.com"><i class="bi bi-envelope-fill fs-3"></i></a>
+  <a href="changlin@sas.upenn.edu"><i class="bi bi-envelope-fill fs-3"></i></a>
 </div>
 :::
 :::::
