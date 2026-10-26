@@ -8,7 +8,9 @@ categories:
 image: "ige_comparison_copy.png"
 ---
 
-Hello everyone, welcome back! This time, the blog post is different than usual. I did a step-by-step tutorial using individual and family identifiers in longitudinal PSID data.
+Hello everyone, welcome back! 
+
+This time, the blog post is different than usual. I did a step-by-step tutorial using individual and family identifiers in longitudinal PSID data.
 
 ## Please read
 
