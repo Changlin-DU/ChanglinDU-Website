@@ -7,7 +7,9 @@ categories:
 image: figure1_unemployment_paths_copy.png
 ---
 
-Hello everyone and welcome back! For my third blog post, I wanted to revisit a familiar economic event from a different angle. We know that unemployment increased dramatically during the first months of COVID-19, but the national unemployment rate only tells us what happened on average. It does not show which workers were hit hardest or which groups recovered first.
+Hello everyone and welcome back! 
+
+For my third blog post, I wanted to revisit a familiar economic event from a different angle. We know that unemployment increased dramatically during the first months of COVID-19, but the national unemployment rate only tells us what happened on average. It does not show which workers were hit hardest or which groups recovered first.
 
 My question is: **how did unemployment recovery following the COVID-19 shock differ across educational attainment groups?**
 
