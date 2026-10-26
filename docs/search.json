@@ -11,28 +11,28 @@
     "href": "bio.html",
     "title": "About Me",
     "section": "",
-    "text": "Write a short biography here.\nInclude:"
+    "text": "Changlin (Bruce) Du is currently pursuing a master’s degree in Applied Economics and Data Science at the University of Pennsylvania. He graduated from Wake Forest University in May 2026 with a Bachelor of Arts in Economics and a minor in Statistics. During his undergraduate studies, Bruce worked as a research assistant in the Department of Economics, gaining experience in data entry, data management, and statistical analysis. His research interests included immigration and labor economics, which he explored through his undergraduate honors thesis. Through his coursework and research experience in economics and statistics, Bruce gained exposure to statistical computing and data analysis. With an interest in healthcare and kidney diseases, particularly IgA nephropathy, he hopes to apply these skills to healthcare research and further explore the field of biostatistics. Bruce joins the Zee Lab to work with Dr. Zee and Dr. Xie on research involving membranous nephropathy, a type of glomerular disease. His current work involves exploring the potential use of natural language processing (NLP) to identify membranous nephropathy diagnoses from kidney biopsy pathology reports and support the development of research datasets. Through this opportunity, he hopes to learn more about biostatistical methods and contribute to kidney disease research."
   },
   {
     "objectID": "bio.html#education",
     "href": "bio.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\nM.S. Applied Economics and Data Science, University of Pennsylvania, 2027 B.A. Economics (High Honors), Wake Forest University, 2026\n\nHonors Thesis: “Do H-1B Workers Substitute For or Complement U.S. Domestic Workers?” Advisor: Andre Mouton"
+    "text": "Education\nM.S. Applied Economics and Data Science, University of Pennsylvania, 2027 B.A. Economics (High Honors), Wake Forest University, 2026\n\nHonors Thesis: “Do H-1B Workers Substitute For or Complement U.S. Domestic Workers?” Advisor: Dr. Andre Mouton"
   },
   {
     "objectID": "bio.html#interests",
     "href": "bio.html#interests",
     "title": "About Me",
     "section": "Interests",
-    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis"
+    "text": "Interests\n\nCausal Inference and Clinical Trial\nChronic Kidney Disease\nImmigration and Labor Economics"
   },
   {
     "objectID": "bio.html#contact",
     "href": "bio.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact"
+    "text": "Contact\nI can be reached out via changlin@sas.upenn.edu"
   },
   {
     "objectID": "bio.html#studentemail.edu",
