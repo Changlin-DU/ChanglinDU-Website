@@ -183,9 +183,11 @@ window.Quarto = {
 
 
 <p>Hello everyone, I am so happy to share my first blog post!</p>
-<p>Today, I want to discuss the <strong>Slutsky decomposition</strong>, because I think it is one of those ideas that looks much harder when we first see the equations than it really is.</p>
-<p>Suppose the price of coffee goes up. The first reaction is simple: coffee is more expensive, so I buy less of it. But that answer combines two different forces. First, coffee is now more expensive relative to other goods, so I have a reason to substitute away from it. Second, even if my income does not change, the same income buys less than before, so my real purchasing power falls.</p>
-<p>The difficult part is that these two effects happen at the same time. We only observe the move from the original choice to the final choice. We do not directly see how much came from substitution and how much came from lower purchasing power. Economists therefore introduce a hypothetical compensation step. We imagine giving the consumer just enough income to stay at the original utility level after the price change. This is not meant to describe what literally happens; it is a thought experiment that isolates the response to the new relative prices. Once that compensation is removed, the remaining change is the income effect.</p>
+<p>Today, I want to discuss the <strong>Slutsky decomposition</strong>. I wanted to write about this topic because it was one of the first ideas we learned in our Applied Microeconomics class. The name sounds quite fancy, and the equations can make it look more difficult than it really is. However, the intuition behind it is actually quite simple. It is also one of the most important concepts in microeconomics, so let’s take a look at it.</p>
+<p>Suppose the price of coffee goes up. I will probably buy less coffee, but there are actually two reasons for this change. First, coffee is now more expensive relative to other goods, so I have a reason to substitute away from it. Second, even though my income has not changed, the same amount of money can no longer buy as much as before. In other words, I have become poorer in real terms.</p>
+<p>The problem is that these two things happen at the same time. If I only compare how much coffee I bought before and after the price increase, I can see the total change, but I cannot tell how much came from the new relative price and how much came from the loss in purchasing power.</p>
+<p>To separate the two effects, imagine an intermediate situation. After the price of coffee rises, suppose I receive just enough extra income to make me as well off as I was before. This compensation takes away the loss in well-being, but it does not undo the price change. Coffee is still more expensive relative to other goods, so I may still choose to buy less of it. Therefore, the movement from my original choice to this compensated choice shows the effect of the change in relative prices. This is the <strong>substitution effect</strong>.</p>
+<p>Now suppose the extra income is taken away while the new prices stay the same. Since relative prices have not changed again, the only new change is the reduction in my purchasing power. Therefore, the movement from the compensated choice to my actual final choice is the <strong>income effect</strong>.</p>
 <p>The basic idea is</p>
 <p><span class="math display">\[
 \text{Total Effect}
@@ -194,7 +196,7 @@ window.Quarto = {
 +
 \text{Income Effect}.
 \]</span></p>
-<p>The example below makes this separation concrete and then connects it to the general Slutsky equation.</p>
+<p>The numerical example below shows how we can separate these two effects and then connect them to the general Slutsky equation.</p>
 <section id="a-numerical-example" class="level2">
 <h2 class="anchored" data-anchor-id="a-numerical-example">A Numerical Example</h2>
 <p>Suppose a consumer chooses between coffee, <span class="math inline">\(x\)</span>, and all other goods, <span class="math inline">\(y\)</span>, with preferences</p>
