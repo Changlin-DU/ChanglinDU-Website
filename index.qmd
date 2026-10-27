@@ -19,9 +19,7 @@ title: ""
 
 # Changlin (Bruce) Du 杜昶霖
 
-University of Pennsylvania
-
-Welcome to my personal website.
+Welcome to my personal website, Go Deacs!
 
 ### Quick Links
 
@@ -29,7 +27,6 @@ Welcome to my personal website.
   <a href="https://github.com/Changlin-DU"><i class="bi bi-github fs-3"></i></a>
   <a href="https://www.linkedin.com/in/changlin-du/"><i class="bi bi-linkedin fs-3"></i></a>
   <a href="resume.qmd"><i class="bi bi-file-earmark-person-fill fs-3"></i></a>
-  <a href="changlin@sas.upenn.edu"><i class="bi bi-envelope-fill fs-3"></i></a>
 </div>
 :::
 :::::
