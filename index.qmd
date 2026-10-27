@@ -5,11 +5,17 @@ title: ""
 ::::: columns
 ::: {.column width="35%"}
 ![](images/myphoto.png){width="100%"}
+
 :::
 
 ::: {.column width="65%"}
 
-![](images/UniversityofPennsylvania_FullLogo_RGB.png){width="250px"}
+<div style="display: flex; align-items: center; gap: 22px; margin-bottom: 5px;">
+  <img src="images/UniversityofPennsylvania_FullLogo_RGB.png"
+       style="width: 235px; height: 85px; object-fit: contain;">
+  <img src="images/WFU_logo.png"
+       style="width: 187px; height: 85px; object-fit: contain;">
+</div>
 
 # Changlin (Bruce) Du 杜昶霖
 
