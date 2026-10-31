@@ -12,7 +12,7 @@ Hello everyone and welcome back!
 
 Happy Halloween! Did you guys enjoy the happy hour?
 
-For this blog post, I wanted to look at two terms that appear in almost every empirical study: confidence intervals and p-values. I believe most of us had seen both many times during our undergraduate studies. And I think these are the most fundamental concepts in econometrics and statistics. However, I realized that it is much easier to repeat their definitions than to explain what they actually mean. A 95% confidence interval does not mean that one calculated interval has a 95% probability of containing the true parameter. A p-value is also not the probability that the null hypothesis is true. These differences matter because they change how we interpret statistical results.
+This time, I wanted to look at two terms that appear in almost every empirical study: confidence intervals and p-values. I believe most of us had seen both many times during our undergraduate studies. And I think these are the most fundamental concepts in econometrics and statistics. However, I realized that it is much easier to repeat their definitions than to explain what they actually mean. A 95% confidence interval does not mean that one calculated interval has a 95% probability of containing the true parameter. A p-value is also not the probability that the null hypothesis is true. These differences matter because they change how we interpret statistical results.
 
 ## Data and Method
 

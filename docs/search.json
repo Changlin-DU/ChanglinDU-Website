@@ -46,7 +46,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Can Economies Grow Without Growing Their Carbon Emissions?\n\n\n\n\n\n\n\n\nOct 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMatching Parents and Children with SQL in Python\n\n\n\n\n\n\n\n\nOct 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia’s Income Divide: Where Are High- and Low-Income Communities Concentrated?\n\n\n\n\n\n\n\n\nOct 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPriced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?\n\n\n\n\n\n\n\n\nOct 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nUnequal Paths Back: How Education Shaped the COVID-19 Unemployment Recovery\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhich Tech Career Offers the Best Balance of Pay and Opportunity for College Students?\n\n\n\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhen Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
+    "text": "What Does 95% Confidence Actually Mean?\n\n\n\n\n\n\n\n\nOct 31, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nCan Economies Grow Without Growing Their Carbon Emissions?\n\n\n\n\n\n\n\n\nOct 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMatching Parents and Children with SQL in Python\n\n\n\n\n\n\n\n\nOct 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia’s Income Divide: Where Are High- and Low-Income Communities Concentrated?\n\n\n\n\n\n\n\n\nOct 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPriced Out: How Did Housing Affordability Change Across U.S. States from 2019 to 2024?\n\n\n\n\n\n\n\n\nOct 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nUnequal Paths Back: How Education Shaped the COVID-19 Unemployment Recovery\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhich Tech Career Offers the Best Balance of Pay and Opportunity for College Students?\n\n\n\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhen Coffee Gets More Expensive — Understanding the Slutsky Decomposition\n\n\n\n\n\n\n\n\nSep 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/post1/Untitled.html",
@@ -551,5 +551,47 @@
     "title": "Changlin (Bruce) Du 杜昶霖",
     "section": "",
     "text": "Changlin (Bruce) Du 杜昶霖\nUniversity of Pennsylvania\nWelcome to my personal website.\n\nQuick Links"
+  },
+  {
+    "objectID": "blog/posts/post8/index.html",
+    "href": "blog/posts/post8/index.html",
+    "title": "What Does 95% Confidence Actually Mean?",
+    "section": "",
+    "text": "Hello everyone and welcome back!\nHappy Halloween! Did you guys enjoy the happy hour?\nThis time, I wanted to look at two terms that appear in almost every empirical study: confidence intervals and p-values. I believe most of us had seen both many times during our undergraduate studies. And I think these are the most fundamental concepts in econometrics and statistics. However, I realized that it is much easier to repeat their definitions than to explain what they actually mean. A 95% confidence interval does not mean that one calculated interval has a 95% probability of containing the true parameter. A p-value is also not the probability that the null hypothesis is true. These differences matter because they change how we interpret statistical results."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#data-and-method",
+    "href": "blog/posts/post8/index.html#data-and-method",
+    "title": "What Does 95% Confidence Actually Mean?",
+    "section": "Data and Method",
+    "text": "Data and Method\nI did not use an external dataset. All samples were generated in R with fixed random seeds. I first drew 50 observations from a right-skewed population with true mean \\(\\mu=10\\). From this sample, I repeatedly drew new samples of size 50 with replacement and calculated their means. With replacement means that one observation may appear several times in a bootstrap sample while another may not appear at all. I repeated this process 5,000 times.\nFor the coverage experiment, I generated 2,000 independent samples of size 50 from a normal population with \\(\\mu=10\\) and standard deviation 4. I constructed a 95% percentile bootstrap confidence interval for each sample using 800 resamples. For the hypothesis-testing example, I generated an observed sample from a normal population with mean 11 and tested it against a null mean of 10.\nThe complete code, generated data, figures, and replication instructions are available in the GitHub repository. After cloning the repository, the full project can be reproduced with:\n\nsource(\"codes/06_run_all.R\")"
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#building-a-bootstrap-confidence-interval",
+    "href": "blog/posts/post8/index.html#building-a-bootstrap-confidence-interval",
+    "title": "What Does 95% Confidence Actually Mean?",
+    "section": "Building a Bootstrap Confidence Interval",
+    "text": "Building a Bootstrap Confidence Interval\n\n\n\nThe bootstrap distribution develops as the number of resamples increases from 100 to 5,000. The black line marks the observed sample mean, the green line the true population mean, and the orange lines the evolving confidence interval.\n\n\nThe observed sample mean was 10.459. The 2.5th and 97.5th percentiles of the 5,000 bootstrap means produced the interval \\([8.800,12.205]\\), which contains the true mean of 10. The original sample acts as a small stand-in for the population, and the bootstrap distribution shows how much the sample mean could vary.\nOpen the interactive bootstrap explorer\nThe explorer allows the sample size, number of resamples, confidence level, and true mean to be changed. Increasing the number of resamples mainly makes the bootstrap distribution smoother. Increasing the original sample size reduces the uncertainty itself. In other words, more resamples cannot make up for limited information in the original sample."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#what-does-95-confidence-mean",
+    "href": "blog/posts/post8/index.html#what-does-95-confidence-mean",
+    "title": "What Does 95% Confidence Actually Mean?",
+    "section": "What Does 95% Confidence Mean?",
+    "text": "What Does 95% Confidence Mean?\n\n\n\nOne hundred illustrative bootstrap confidence intervals. Blue intervals contain the true population mean, while orange intervals miss it.\n\n\nAcross the 2,000 repeated samples, 1,896 intervals contained \\(\\mu=10\\) and 104 did not. The empirical coverage rate was therefore 94.8%, which is close to 95%. This is the interpretation that I find most useful: the confidence level describes how the procedure performs over many samples. Once one interval has been calculated, it either contains the fixed population mean or it does not."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#testing-a-null-hypothesis",
+    "href": "blog/posts/post8/index.html#testing-a-null-hypothesis",
+    "title": "What Does 95% Confidence Actually Mean?",
+    "section": "Testing a Null Hypothesis",
+    "text": "Testing a Null Hypothesis\nI tested\n\\[\nH_0:\\mu=10\n\\qquad\\text{against}\\qquad\nH_A:\\mu\\neq10.\n\\]\nThe observed sample had mean 11.387 and test statistic \\(t=2.469\\). I then generated 20,000 samples assuming \\(H_0\\) was true and calculated a t-statistic for each one.\n\n\n\nSimulated null distribution with two-sided rejection regions, the observed test statistic, and the outcomes used to calculate the p-value.\n\n\nFor a two-sided test with \\(\\alpha=0.05\\), the rejection region is divided between the lowest 2.5% and highest 2.5% of the null distribution. The simulated boundaries were approximately \\(-2.008\\) and \\(1.997\\). Since \\(t=2.469\\) is beyond the upper boundary, it falls in the rejection region.\nOnly 323 simulated null statistics were at least as extreme as the observed value in either direction, producing \\(p=0.0162\\). Since \\(p&lt;0.05\\), I reject \\(H_0\\). This does not mean there is a 1.62% chance that \\(H_0\\) is true. It means that if \\(H_0\\) were true, a result this extreme would occur only about 1.62% of the time."
+  },
+  {
+    "objectID": "blog/posts/post8/index.html#takeaway",
+    "href": "blog/posts/post8/index.html#takeaway",
+    "title": "What Does 95% Confidence Actually Mean?",
+    "section": "Takeaway",
+    "text": "Takeaway\nOverall, my main takeaway is that both ideas depend on repeated sampling. A 95% confidence procedure captures the true parameter about 95% of the time, but not every time. A p-value tells us how unusual the observed statistic would be under the null hypothesis; it does not tell us the probability that the null is true. Simulation made these differences much easier for me to see."
   }
 ]
